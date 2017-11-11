@@ -1,0 +1,82 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RadioServer.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CONTROL_TCP_PORT" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">60000</Value>
+    </Setting>
+    <Setting Name="KEYS_FILE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">keys.xml</Value>
+    </Setting>
+    <Setting Name="LDAP_PERMISSION_DEF_FILE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ldap_permissions.def</Value>
+    </Setting>
+    <Setting Name="FILE_STORE_ROOT" Type="System.String" Scope="User">
+      <Value Profile="(Default)">audio</Value>
+    </Setting>
+    <Setting Name="DB_FILE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">database.sqlite</Value>
+    </Setting>
+    <Setting Name="LDAP_USERNAME" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ldap</Value>
+    </Setting>
+    <Setting Name="LDAP_PASSWORD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">c7TGkkHyGJlsIqQavNa8Y-7ZgPeN_2dm</Value>
+    </Setting>
+    <Setting Name="LDAP_DOMAIN" Type="System.String" Scope="User">
+      <Value Profile="(Default)">gymlit.cz</Value>
+    </Setting>
+    <Setting Name="LDAP_OU" Type="System.String" Scope="User">
+      <Value Profile="(Default)">OU=Zaměstnanci,OU=Uživatelé,DC=gymlit,DC=cz</Value>
+    </Setting>
+    <Setting Name="SECURITY_CACHE_EXPIRATION" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">120</Value>
+    </Setting>
+    <Setting Name="SCHEDULER_CHECK_INTERVAL" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="PLAYBACK_DEV_OUT" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SQLITE_CONN_STRING" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source={0};Version=3;PRAGMA foreign_keys = ON;</Value>
+    </Setting>
+    <Setting Name="SCHEDULER_PADDING_START" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="SCHEDULER_PADDING_END" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">5</Value>
+    </Setting>
+    <Setting Name="LOG_INFO" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="LOG_WARNING" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="LOG_ERROR" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="LOG_FILE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">server.log</Value>
+    </Setting>
+    <Setting Name="PROGRAM_USAGE" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Usage:
+
+-c or -console ... Run server in console mode (for debugging purposes).
+
+-i or -install ... Installs Windows Service.
+
+-u or -uninstall ... Uninstalls Windows Service.
+</Value>
+    </Setting>
+    <Setting Name="SERVICE_NAME" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Radio Server</Value>
+    </Setting>
+    <Setting Name="SERVICE_DISPLAYNAME" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Radio Server</Value>
+    </Setting>
+    <Setting Name="SERVICE_DESCRIPTION" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">This service is school broadcast radio daemon. It recieves broadcast request from the network and play them to school sound system.</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

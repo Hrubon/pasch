@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="RadioClient.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SERVER_IP" Type="System.String" Scope="User">
+      <Value Profile="(Default)">10.7.32.9</Value>
+    </Setting>
+    <Setting Name="CONTROL_TCP_PORT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">60000</Value>
+    </Setting>
+    <Setting Name="BROADCAST_PORT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">60001</Value>
+    </Setting>
+    <Setting Name="RESPOND_TIMEOUT" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1000</Value>
+    </Setting>
+    <Setting Name="FINGERPRINT_STORE_FILE" Type="System.String" Scope="User">
+      <Value Profile="(Default)">trusted_hosts</Value>
+    </Setting>
+    <Setting Name="TRANSFER_BUFFER_SIZE" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2048000</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

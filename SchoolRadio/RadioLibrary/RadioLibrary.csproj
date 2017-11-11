@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{425EFB58-E4A8-4A91-AF6F-D38999EDD36B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RadioLibrary</RootNamespace>
+    <AssemblyName>RadioLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="Net\Authenticate\AuthenticateRequest.cs" />
+    <Compile Include="Net\Authenticate\AuthenticateResponse.cs" />
+    <Compile Include="Net\BroadcastOperation\Alter\EditBroadcastRequest.cs" />
+    <Compile Include="Net\BroadcastOperation\Alter\AlterBroadcastResponse.cs" />
+    <Compile Include="Net\BroadcastOperation\Alter\AlterBroadcastResult.cs" />
+    <Compile Include="Net\BroadcastOperation\Alter\RemoveBroadcastRequest.cs" />
+    <Compile Include="Net\Client.cs" />
+    <Compile Include="Net\Goodbye\GoodbyeRequest.cs" />
+    <Compile Include="Net\Hello\HelloResponse.cs" />
+    <Compile Include="Net\Hello\HelloRequest.cs" />
+    <Compile Include="Net\KeyExchange\KeyExchangeRequest.cs" />
+    <Compile Include="Net\LiveBroadcast\LiveBroadcastResponse.cs" />
+    <Compile Include="Net\LiveBroadcast\LiveBroadcastRequest.cs" />
+    <Compile Include="Net\LiveBroadcast\LiveBroadcastResults.cs" />
+    <Compile Include="Net\Handlers.cs" />
+    <Compile Include="Net\StopLiveBroadcast\StopLiveBroadcastResponse.cs" />
+    <Compile Include="Net\StopLiveBroadcast\StopLiveBroadcastResults.cs" />
+    <Compile Include="Net\StopLiveBroadcast\StopLiveBroadcastRequest.cs" />
+    <Compile Include="Net\RequestReciever.cs" />
+    <Compile Include="Net\RequestSender.cs" />
+    <Compile Include="Net\TcpProtocol.cs" />
+    <Compile Include="Net\TcpSender.cs" />
+    <Compile Include="Net\TcpServer.cs" />
+    <Compile Include="Net\UdpSender.cs" />
+    <Compile Include="Net\UdpServer.cs" />
+    <Compile Include="Services\DB\BroadcastScheduler.cs" />
+    <Compile Include="Services\DB\FileStore.cs" />
+    <Compile Include="Services\DB\SQLiteDatabase.cs" />
+    <Compile Include="Services\ProgramOutput\ConsoleOutput.cs" />
+    <Compile Include="Services\ProgramOutput\LogOutput.cs" />
+    <Compile Include="Services\ProgramOutput\Output.cs" />
+    <Compile Include="Services\ProgramOutput\ProgramOutput.cs" />
+    <Compile Include="Services\Security\AesCrypter.cs" />
+    <Compile Include="Services\Security\AuthenticatorCache.cs" />
+    <Compile Include="Services\Security\CacheEntry.cs" />
+    <Compile Include="Services\Security\FingerprintStore.cs" />
+    <Compile Include="Services\Security\EncryptionProvider.cs" />
+    <Compile Include="Services\Security\LdapAuthenticator.cs" />
+    <Compile Include="Services\Security\LdapAuthorizator.cs" />
+    <Compile Include="Services\Security\LdapCredentials.cs" />
+    <Compile Include="Services\Security\PermissionAttributeEditor.cs" />
+    <Compile Include="Services\Security\RsaCrypter.cs" />
+    <Compile Include="Services\Security\Session.cs" />
+    <Compile Include="Services\Security\SessionManager.cs" />
+    <Compile Include="Services\Security\SessionPhase.cs" />
+    <Compile Include="Services\ServiceContainer.cs" />
+    <Compile Include="Net\BroadcastOperation\Plan\PlanBroadcastRequest.cs" />
+    <Compile Include="Net\BroadcastOperation\Plan\PlanBroadcastResponse.cs" />
+    <Compile Include="Net\BroadcastOperation\Plan\PlanBroadcastResults.cs" />
+    <Compile Include="Net\BroadcastOperation\Upload\MediaType.cs" />
+    <Compile Include="Net\BroadcastOperation\Upload\UploadBroadcastRequest.cs" />
+    <Compile Include="Net\BroadcastOperation\Upload\UploadBroadcastResponse.cs" />
+    <Compile Include="Net\BroadcastOperation\Upload\UploadBroadcastResult.cs" />
+    <Compile Include="Services\Audio\FileReciever.cs" />
+    <Compile Include="Services\Audio\FileRecorder.cs" />
+    <Compile Include="Services\Audio\FileStreamer.cs" />
+    <Compile Include="Net\Authenticate\AuthenticationResult.cs" />
+    <Compile Include="Model\BroadcastType.cs" />
+    <Compile Include="Services\Security\DummyAuthenticator.cs" />
+    <Compile Include="Services\Security\DummyAuthorizator.cs" />
+    <Compile Include="Net\BroadcastOperation\Select\SelectBroadcastResponse.cs" />
+    <Compile Include="Net\BroadcastOperation\Select\SelectBroadcastsRequest.cs" />
+    <Compile Include="Net\CommonResponses\CannotExecuteResponse.cs" />
+    <Compile Include="Net\ListPermissions\ListPermissionsRequest.cs" />
+    <Compile Include="Net\ListPermissions\ListPermissionsResponse.cs" />
+    <Compile Include="Services\MasterContainer.cs" />
+    <Compile Include="Model\BroadcastInfo.cs" />
+    <Compile Include="Services\Security\IAuthenticator.cs" />
+    <Compile Include="Services\Security\IAuthorizator.cs" />
+    <Compile Include="Net\CommonResponses\AccessDeniedResponse.cs" />
+    <Compile Include="Net\CommonResponses\UnauthorizedResponse.cs" />
+    <Compile Include="Services\Audio\LiveBroadcastStreamer.cs" />
+    <Compile Include="Services\Audio\Playback.cs" />
+    <Compile Include="Services\Audio\IAudioCodec.cs" />
+    <Compile Include="Services\Audio\LiveBroadcastReciever.cs" />
+    <Compile Include="Services\Audio\PcmCodec.cs" />
+    <Compile Include="Net\Permission.cs" />
+    <Compile Include="Services\Security\AuthorizatorCache.cs" />
+    <Compile Include="Net\Request.cs" />
+    <Compile Include="Net\Response.cs" />
+    <Compile Include="Net\NetFormatter.cs" />
+    <Compile Include="Net\CommonResponses\SuccessResponse.cs" />
+    <Compile Include="Services\DB\IBroadcastDatabase.cs" />
+    <Compile Include="Net\User.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="NAudio">
+      <HintPath>..\..\packages\NAudio.1.7.3\lib\net35\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="NSpeex">
+      <HintPath>..\..\packages\NSpeex.1.1.3\lib\NSpeex.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.98.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\sqlite-netFx45-static-binary-Win32-2012-1.0.98.0\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
